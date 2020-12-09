@@ -1,4 +1,14 @@
-/*hoja de estilos*/
-/*font-family: 'Coda', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;*/
+body{
+  margin: 0;
+}
+
+.principal{
+  display: flex;
+  justify-content: space-around;
+  background-color:rgb(168, 170, 180) ;
+  padding: 50px;
+}
+
+#imgSmile{
+  border-radius: 15px;
+}
