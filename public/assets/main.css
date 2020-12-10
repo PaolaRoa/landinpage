@@ -6,9 +6,12 @@ body{
 
 h2{
   color: white;
-  text-align: left;
+  text-align: center;
+  font-size: 48px;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  text-shadow:2px 2px 5px black;
+
 }
 ul{
   list-style: none;
@@ -18,22 +21,52 @@ li{
   font-weight: 200;
   color: #080808;
   text-indent: -2%;
+  width: 80%;
 }
-h3{
+h3, h4{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   color: rgb(11, 86, 121);
 }
 form{
   font-family: 'Ubuntu', sans-serif;
+  padding: 30px;
+  background-color:transparent;
+  height: 300px;
 }
 
 input{
   border: 1px solid #999;
   border-radius: 10px;
-  background-color: rgb(156, 156, 192);
- 
+  background-color: rgb(207, 207, 245);
+  width: 300px;
+  height: 30px;
+  margin: 15px;
+
 }
+
+footer{
+  background-color: rgb(7, 21, 51);
+}
+
+button{
+  border-radius: 10px;
+  border-style: none ;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 30px;
+  width: 60px;
+  float: right;
+  margin: 10px;
+  background-color: rgb(26, 91, 165);
+  color: rgb(255, 255, 255);
+}
+
+button:hover{
+  background-color: rgb(114, 112, 231);
+}
+
 .principal{
   background-image:linear-gradient(rgba(37, 37, 37, 0), rgb(22, 119, 175)), url(/public/images/sonrisa.jpg);
   background-size: cover;
@@ -44,30 +77,63 @@ input{
 
 }
 .beneficios{
+  background-image:linear-gradient(rgba(37, 37, 37, 0), rgb(22, 119, 175)),url(/public/images/cartel.jpg);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: top right;
   display: flex;
   flex:100%;
   padding:5%;
- border:red;
- border-style: solid;
+  margin-bottom: 100px;
+
 }
 .flex1{
   flex-basis: 50%;
+
 }
 .flex2{
   padding-left: 2%;
+  margin: 0;
   align-items: center;
 }
 
 @media screen and (max-width: 600px){
   .beneficios{
     flex-direction: column;
+    background-image: none;
   }
 }
 .imgRedonda {
-  width:300px;
-  height:300px;
+  width:200px;
+  height:200px;
   border-radius:150px;
   border:10px solid rgb(102, 102, 102);
+}
+.caract {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px){
+  .caract {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+.caract-body {
+  padding: 10px;
+  margin: 10px;
+  /*background-color: yellow;*/
+}
+
+.caract-text{
+  
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(11, 86, 121);
+
 }
 
 #Titulo{
