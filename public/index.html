@@ -8,6 +8,8 @@
   <!--Le coloque estas fuentes a ver que te parecen-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Erica+One&display=swap" rel="stylesheet">
   <link rel="icon" href="/public/images/favicon.png" type="image/png" />
   <title>Dra Roa Land Page</title>
 
@@ -22,11 +24,13 @@
     <div class="RRSS"></div>
   </header>
   <div class="principal">
-    <h1>¿Quieres una sonrisa espectacular?</h1>
+    <h2>¿Quieres una sonrisa espectacular?</h2>
+    <h1 id="titulo">Con WhiteNow es tan fácil como sonreir</h1>
+
   </div>
-  <div class="beneficios">
-    <div>
-      <ul>
+  <div >
+    <div class="beneficios">
+      <ul class = "flex1">
         <li>
           <h3>Beneficio estético</h3>
           Una sonrisa más blanca implica un beneficio estético directo.
@@ -55,7 +59,7 @@
         </li>
       </ul>
 
-      <div>
+      <div class="flex2">
         <form>
           <label for="name">Nombre:</label><br>
           <input type="text" id="name" name="name" placeholder="Pedro Reyes"><br>
@@ -70,12 +74,32 @@
       </div>
 
     </div>
-    <div id="caracteristicas">
-      <div>Es indoloro</div>
-      <div>Es rapido</div>
-      <div>Es ecónomico</div>
-      <div>Antes y Despues</div>
+  <div class="caract">
+    <div>
+      <img src='https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/migrated/blanqueamiento-dientes.jpg' 
+      class='imgRedonda' />
+      <article class="caract-text">Es indoloro</article>
     </div>
+
+    <div>
+      <img src='https://cdn.inteligenciaviajera.com/wp-content/uploads/2020/02/C%C3%B3mo-organizar-mi-tiempo.jpg' 
+      class='imgRedonda' />
+      <article class="caract-text">Es rapido</article>
+    </div>
+    
+    <div>
+      <img src='https://image.freepik.com/vector-gratis/crecimiento-economico_24877-49241.jpg' 
+      class='imgRedonda' />
+      <article class="caract-text">Es ecónomico</article>
+    </div>    
+  
+    <div>
+      <img src='https://clinicadentalpcm.com/wp-content/uploads/2018/07/blog-clinica-dental-perez-castro-martin-blanqueamiento-remedios-caseros.jpg' 
+      class='imgRedonda' />
+      <article class="caract-text">Notaras la diferencia<</article>
+    </div>     
+
+  </div>
 </body>
 
 </html>
