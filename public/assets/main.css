@@ -1,10 +1,11 @@
-/*font-family: 'Roboto', sans-serif;
-font-family: 'Ubuntu', sans-serif;*/
-body {
+
+body 
+{
   margin: 0;
 }
 
-h2 {
+h2 
+{
   color: white;
   text-align: center;
   font-size: 48px;
@@ -12,18 +13,19 @@ h2 {
   font-weight: 500;
   text-shadow: 2px 2px 5px black;
 }
-ul {
+ul 
+{
   list-style: none;
 }
-li {
+li 
+{
   font-family: "Ubuntu", sans-serif;
   font-weight: 200;
   color: #080808;
   text-indent: -2%;
   width: 80%;
 }
-h3,
-h4 {
+h3,h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   color: rgb(11, 86, 121);
@@ -136,6 +138,13 @@ button:hover {
     align-items: center;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+  .beneficios{
+    flex-direction: column;
+    background-image: none;
+  }
+}
 .caract-body {
   padding: 10px;
   margin: 10px;
@@ -190,6 +199,7 @@ button:hover {
   color: green;
 }
 
+/*animacion letra*/
 ::selection {
   background: transparent;
 }
