@@ -29,6 +29,7 @@ h3,h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   color: rgb(11, 86, 121);
+  line-height: 30px;
 }
 form {
   font-family: "Ubuntu", sans-serif;
@@ -38,12 +39,13 @@ form {
 }
 
 input {
-  border: 1px solid #999;
+  border: 0px;
   border-radius: 10px;
   background-color: rgb(207, 207, 245);
   width: 300px;
   height: 30px;
   margin: 15px;
+  box-shadow: -3px 3px 4px rgba(46, 45, 48, 0.479);
 }
 header {
   height: 100px;
@@ -110,6 +112,7 @@ button:hover {
   .beneficios {
     flex-direction: column;
     background-image: none;
+    align-items: center;
   }
   h2 {
     color: white;
@@ -118,6 +121,11 @@ button:hover {
   }
   footer {
     flex-direction: column;
+  }
+  .caract {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -131,18 +139,13 @@ button:hover {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 767px) {
-  .caract {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
+
 
 @media screen and (min-width: 768px) and (max-width:1023px){
   .beneficios{
     flex-direction: column;
     background-image: none;
+    align-items: center;
   }
 }
 .caract-body {
