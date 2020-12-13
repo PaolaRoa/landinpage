@@ -61,22 +61,9 @@ footer {
   padding: 100px;
 }
 
-.PromoBoton {
 
-  border-radius: 70px;
-  border-style: 10px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  height: 50px;
-  width: fit-content;
-  float: center;
-  margin: 10px;
-  background-color: rgb(165, 26, 91);
-  color: rgb(255, 255, 255);
-}
 
-button {
+.process button, .beneficios button {
   border-radius: 10px;
   border-style: none;
   font-family: "Ubuntu", sans-serif;
@@ -89,12 +76,26 @@ button {
   background-color: rgb(26, 91, 165);
   color: rgb(255, 255, 255);
 }
+.PromoBoton {
 
+  border-radius: 70px;
+  border-style: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  height: 50px;
+  width: fit-content;
+  margin: 10px;
+  background-color: rgb(165, 26, 91);
+  color: rgb(255, 255, 255);
+}
 button:hover {
   background-color: rgb(114, 112, 231);
 }
 
 .principal {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(rgba(37, 37, 37, 0), rgb(22, 119, 175)),
     url(/public/images/sonrisa.jpg);
   background-size: cover;
@@ -102,6 +103,7 @@ button:hover {
   background-color: lavender;
   padding: 50px;
   height: 500px;
+  align-items: center;
 }
 
 .beneficios {
