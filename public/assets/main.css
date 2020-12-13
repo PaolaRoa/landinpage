@@ -56,6 +56,21 @@ footer {
   padding: 100px;
 }
 
+.PromoBoton {
+
+  border-radius: 70px;
+  border-style: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  height: 50px;
+  width: fit-content;
+  float: center;
+  margin: 10px;
+  background-color: rgb(165, 26, 91);
+  color: rgb(255, 255, 255);
+}
+
 button {
   border-radius: 10px;
   border-style: none;
