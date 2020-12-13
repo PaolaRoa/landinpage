@@ -96,15 +96,19 @@ button:hover {
 .principal {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   background-image: linear-gradient(rgba(37, 37, 37, 0), rgb(22, 119, 175)),
     url(/public/images/sonrisa.jpg);
   background-size: cover;
   background-position: center;
   background-color: lavender;
   padding: 50px;
-  height: 500px;
+  height: 600px;
   align-items: center;
+  flex: 1;
+  
 }
+
 
 .beneficios {
   background-image: linear-gradient(rgba(37, 37, 37, 0), rgb(22, 119, 175)),
@@ -224,7 +228,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100px;
+  height: auto;
   margin: auto;
   display: block;
 
@@ -260,4 +264,14 @@ h1 {
   align-items: center;
 }
 
+@media screen and (max-width:1100px){
 
+ #frase{
+    font-size: 36px;
+  }
+}
+@media screen and (max-width:720px){
+  #Titulo{
+    font-size: 42px;
+  }
+}
