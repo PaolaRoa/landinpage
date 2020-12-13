@@ -8,7 +8,7 @@ h2
 {
   color: white;
   text-align: center;
-  font-size: 48px;
+  font-size: 4vw;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   text-shadow: 2px 2px 5px black;
@@ -232,14 +232,13 @@ h1 {
   margin: auto;
   display: block;
 
- animation: bounce 0.3s ease infinite alternate;
-
+ animation: bounce 0.3s ease infinite altegit 
   font-family: "Ubuntu", sans-serif;
-  font-size: 60px;
+  font-size: 6vw;
   color: #fff;
   text-align: center;
   font-weight: 400;
-  line-height: 100px;
+  line-height: 6vw;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
@@ -270,9 +269,10 @@ h1 {
     font-size: 36px;
   }
 }
-@media screen and (max-width:720px){
+/*@media screen and (max-width:720px){
   #Titulo{
     font-size: 50px;
     line-height: 50px;
   }
 }
+*/
