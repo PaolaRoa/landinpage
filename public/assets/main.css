@@ -54,7 +54,8 @@ header {
 footer {
   color: white;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: space-around;
   background-color: rgb(7, 21, 51);
   padding: 100px;
@@ -95,38 +96,30 @@ button:hover {
   background-repeat: no-repeat;
   background-position: top right;
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   flex: 100%;
   padding: 5%;
   margin-bottom: 100px;
+  align-items: center;
 }
 .flex1 {
   flex-basis: 50%;
 }
 .flex2 {
+  
   padding-left: 2%;
   margin: 0;
-  align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .beneficios {
-    flex-direction: column;
+@media screen and (max-width: 1110px) {
+  .beneficios{
     background-image: none;
-    align-items: center;
   }
-  h2 {
-    color: white;
-    text-align: center;
-    font-size: 24px;
+  .flex1 .flex2{
+    flex-basis: 100%;
   }
-  footer {
-    flex-direction: column;
-  }
-  .caract {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
 }
 
 .imgRedonda {
@@ -137,21 +130,14 @@ button:hover {
 }
 .caract {
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   justify-content: center;
 }
 
-
-@media screen and (min-width: 768px) and (max-width:1023px){
-  .beneficios{
-    flex-direction: column;
-    background-image: none;
-    align-items: center;
-  }
-}
 .caract-body {
   padding: 10px;
   margin: 10px;
-  /*background-color: yellow;*/
 }
 
 .caract-text {
@@ -167,6 +153,8 @@ button:hover {
   grid-template-columns: auto auto auto;
   justify-content: space-around;
 }
+
+
 @media screen and (max-width: 767px) {
   .process {
     grid-template-columns: auto;
@@ -184,12 +172,13 @@ button:hover {
   border-radius: 20px;
   box-shadow: 2px 2px 10px black;
 }
+/*animación imagenes de productos*/
 .imgProduct:hover {
-  animation-name: cosa;
+  animation-name: rotate;
   animation-duration: 1s;
 }
 
-@keyframes cosa {
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -197,12 +186,16 @@ button:hover {
     transform: rotate(360deg);
   }
 }
+/* fin de animación imagenes de productos*/
 .precio {
   text-align: center;
   color: green;
 }
 
-/*animacion letra*/
+/*animacion letra en sección principal*/
+#Titulo {
+  padding-top: 10%;
+}
 ::selection {
   background: transparent;
 }
@@ -218,8 +211,6 @@ h1 {
   margin: auto;
   display: block;
 
-  /*animacion titulo*/
-
  animation: bounce 0.3s ease infinite alternate;
 
   font-family: "Ubuntu", sans-serif;
@@ -232,7 +223,7 @@ h1 {
     0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
     0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
 }
-/* ANIMATION */
+
 @keyframes bounce {
   100% {
     top: -30px;
@@ -243,6 +234,7 @@ h1 {
   }
 }
 
+/*fin de la animación*/
 .RRSSRedonda {
   width: 50px;
   height: 50px;
@@ -251,6 +243,4 @@ h1 {
   align-items: center;
 }
 
-#Titulo {
-  padding-top: 10%;
-}
+
